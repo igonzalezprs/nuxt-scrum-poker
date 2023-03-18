@@ -6,7 +6,4 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '~/modules/sockets'
   ],
-  env: {
-    WS_URL: process.env.WS_URL || 'http://localhost:3000'
-  },
 })

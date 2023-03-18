@@ -7,8 +7,13 @@ const rooms: Room[] = []
 
 export default defineNuxtModule({
   setup(options, nuxt) {
-    nuxt.hook('listen', (server) => {
-      const io = new Server(server)
+    nuxt.hook('listen', () => {
+      const io = new Server(3001, {
+        serveClient: false,
+        cors: {
+            origin: '*',
+        }
+      });
 
       nuxt.hook('close', () => io.close())
 
