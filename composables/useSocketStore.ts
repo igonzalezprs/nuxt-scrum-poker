@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 import io from 'socket.io-client'
 
 export const useSocketStore = defineStore('socket', () => {
-  const socket = io(':3001')
+  const socket = io('')
   const isConnected = ref(false);
   const socketId = ref('');
 
