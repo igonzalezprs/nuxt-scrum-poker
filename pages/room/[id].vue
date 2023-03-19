@@ -51,7 +51,6 @@ on("error", (error) => {
         <Button @click="saveName">Save</Button>
       </template>
       <template v-else>
-        <h1 class="text-xl mr-5">{{ userName }}</h1>
         <Button @click="() => editName = true">Change name</Button>
       </template>
     </div>
