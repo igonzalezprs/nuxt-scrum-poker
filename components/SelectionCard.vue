@@ -21,7 +21,7 @@ const isSelected = computed(() => instance?.parent?.props.value === props.value)
 
 <style>
 .card {
-  @apply h-20 w-16 flex items-center justify-center rounded-md text-xl font-bold bg-gray-200 text-gray-800 cursor-pointer mx-2 hover:bg-primary-base hover:text-white;
+  @apply h-20 w-16 flex items-center justify-center rounded-md text-xl font-bold bg-gray-200 text-gray-800 cursor-pointer mx-2 my-2 hover:bg-primary-base hover:text-white;
 }
 
 .card--selected {

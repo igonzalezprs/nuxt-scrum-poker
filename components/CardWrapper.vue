@@ -7,7 +7,7 @@ defineEmits(['update']);
 </script>
 
 <template>
-  <div class="flex">
+  <div class="flex flex-wrap justify-center">
     <slot />
   </div>
 </template>
